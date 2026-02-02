@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laptops</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  .screen {
+    max-width: 420px;
+    margin: auto;
+    padding: 16px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .back {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    opacity: 0.7;
+    margin: 8px 0 16px;
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* Card */
+  .card {
+    background: #141414;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .image-box {
+    background: #ffffff;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    padding: 14px;
+  }
+
+  .name {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    color: #3aa0ff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .rating {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  .star {
+    color: #f5c542;
+    margin-right: 4px;
+  }
+</style>
+</head>
+
+<body>
+<div class="screen">
+
+  <div class="header">
+    <div class="back">←</div>
+    <div class="title">Laptops</div>
+  </div>
+
+  <div class="subtitle">6 Products</div>
+
+  <div class="grid">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Dell Ryzen">
+      </div>
+      <div class="content">
+        <div class="name">DELL 15 AMD Ryzen 3 Quad Core 7320U</div>
+        <div class="price">₹41,198</div>
+        <div class="rating">
+          <span class="star">★</span>4.3 (53)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Dell XPS">
+      </div>
+      <div class="content">
+        <div class="name">DELL XPS Intel Core Ultra 7 155H</div>
+        <div class="price">₹3,04,305</div>
+        <div class="rating">
+          <span class="star">★</span>4.2 (12)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="MacBook Pro">
+      </div>
+      <div class="content">
+        <div class="name">Apple MacBook Pro M4 (1TB SSD)</div>
+        <div class="price">₹2,09,900</div>
+        <div class="rating">
+          <span class="star">★</span>4.8 (245)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="MacBook Air">
+      </div>
+      <div class="content">
+        <div class="name">Apple MacBook Air M3 15-inch</div>
+        <div class="price">₹1,39,900</div>
+        <div class="rating">
+          <span class="star">★</span>4.8 (1856)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="HP Pavilion">
+      </div>
+      <div class="content">
+        <div class="name">HP Pavilion x360 14-inch Convertible</div>
+        <div class="price">₹72,990</div>
+        <div class="rating">
+          <span class="star">★</span>4.5 (2341)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="HP 15s">
+      </div>
+      <div class="content">
+        <div class="name">HP Laptop 15s Core i5 12th Gen</div>
+        <div class="price">₹54,990</div>
+        <div class="rating">
+          <span class="star">★</span>4.4 (3452)
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

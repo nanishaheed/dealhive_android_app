@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Headphones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  .screen {
+    max-width: 420px;
+    margin: auto;
+    padding: 16px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .back {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    opacity: 0.7;
+    margin: 8px 0 16px;
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* Card */
+  .card {
+    background: #141414;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .image-box {
+    background: #ffffff;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    padding: 14px;
+  }
+
+  .name {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    color: #3aa0ff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .rating {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  .star {
+    color: #f5c542;
+    margin-right: 4px;
+  }
+</style>
+</head>
+
+<body>
+<div class="screen">
+
+  <div class="header">
+    <div class="back">←</div>
+    <div class="title">Headphones</div>
+  </div>
+
+  <div class="subtitle">12 Products</div>
+
+  <div class="grid">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Boat Rockerz">
+      </div>
+      <div class="content">
+        <div class="name">Boat Rockerz 650 Pro Touch/Swipe Controls</div>
+        <div class="price">₹2,838</div>
+        <div class="rating">
+          <span class="star">★</span>4.2 (2647)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Noise Airwave">
+      </div>
+      <div class="content">
+        <div class="name">Noise Airwave Max 5 Wireless Over-Ear</div>
+        <div class="price">₹4,999</div>
+        <div class="rating">
+          <span class="star">★</span>4.2 (469)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Noise Airwave">
+      </div>
+      <div class="content">
+        <div class="name">Noise Airwave Max 5 Wireless Over-Ear</div>
+        <div class="price">₹4,999</div>
+        <div class="rating">
+          <span class="star">★</span>4.2 (469)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Boat Rockerz">
+      </div>
+      <div class="content">
+        <div class="name">Boat Rockerz 650 Pro Touch/Swipe Controls</div>
+        <div class="price">₹2,838</div>
+        <div class="rating">
+          <span class="star">★</span>4.2 (2647)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Boat Rockerz">
+      </div>
+      <div class="content">
+        <div class="name">Boat Rockerz 650 Pro Touch/Swipe Controls</div>
+        <div class="price">₹2,838</div>
+        <div class="rating">
+          <span class="star">★</span>4.2 (2647)
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://via.placeholder.com/300x180" alt="Noise Airwave">
+      </div>
+      <div class="content">
+        <div class="name">Noise Airwave Max 5 Wireless Over-Ear</div>
+        <div class="price">₹4,999</div>
+        <div class="rating">
+          <span class="star">★</span>4.2 (469)
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
