@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Compare arrows icon for Deal Hive -->
+    <group
+        android:translateX="27"
+        android:translateY="27">
+        
+        <!-- Left arrow pointing right -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M4,12 L14,12 L14,8 L22,14 L14,20 L14,16 L4,16 Z" />
+        
+        <!-- Right arrow pointing left -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M50,42 L40,42 L40,38 L32,44 L40,50 L40,46 L50,46 Z" />
+        
+        <!-- Circle outline -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3"
+            android:pathData="M27,27 m-24,0 a24,24 0,1 1,48 0 a24,24 0,1 1,-48 0" />
+    </group>
+</vector>
