@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Add Product</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color: #0f0f10;
+    color: #ffffff;
+  }
+
+  .container {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .back {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* Labels */
+  .label {
+    font-size: 14px;
+    color: #cfcfcf;
+    margin-bottom: 8px;
+  }
+
+  /* Upload Cards */
+  .upload-card {
+    width: 100%;
+    height: 160px;
+    background-color: #2a2a2e;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .upload-card.small {
+    height: 70px;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+
+  .upload-card .plus {
+    font-size: 32px;
+    color: #3b82f6;
+    margin-bottom: 8px;
+  }
+
+  .upload-card span {
+    font-size: 14px;
+    color: #b5b5b5;
+  }
+
+  .cube {
+    font-size: 18px;
+    color: #b5b5b5;
+  }
+
+  /* Helper text */
+  .helper {
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  /* Inputs */
+  .input-group {
+    margin-bottom: 18px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #0f0f10;
+    border: 1px solid #3a3a3d;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .input::placeholder {
+    color: #8a8a8a;
+  }
+
+  /* Source Buttons */
+  .source-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .source-btn {
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #2a2a2e;
+    color: #cfcfcf;
+  }
+
+  .source-btn.active {
+    background-color: #2563eb;
+    color: #ffffff;
+  }
+
+  /* Dropdown */
+  .select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .arrow {
+    color: #8a8a8a;
+  }
+
+  /* Button */
+  .btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #1e4f91;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="back">←</div>
+      <div class="title">Add Product</div>
+    </div>
+
+    <div class="label">Product Image</div>
+    <div class="upload-card">
+      <div class="plus">+</div>
+      <span>Tap to upload image</span>
+    </div>
+
+    <div class="label">AR Model (.glb / .usdz)</div>
+    <div class="helper">
+      Optional – Upload 3D model for AR view (GLB for Android, USDZ for iOS)
+    </div>
+
+    <div class="upload-card small">
+      <div class="cube">⬚</div>
+      <span>Tap to upload .glb or .usdz file</span>
+    </div>
+
+    <div class="input-group">
+      <div class="label">Title *</div>
+      <input class="input" type="text" placeholder="Enter product title">
+    </div>
+
+    <div class="input-group">
+      <div class="label">Price *</div>
+      <input class="input" type="text" placeholder="Enter price in ₹">
+    </div>
+
+    <div class="label">Source</div>
+    <div class="source-group">
+      <div class="source-btn active">Amazon</div>
+      <div class="source-btn">Flipkart</div>
+      <div class="source-btn">Other</div>
+    </div>
+
+    <div class="input-group">
+      <div class="label">Category *</div>
+      <div class="input select">
+        <span style="color:#8a8a8a">Select category</span>
+        <span class="arrow">▾</span>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div class="label">Product URL *</div>
+      <input class="input" type="text" placeholder="Enter product URL">
+    </div>
+
+    <button class="btn">Add Product</button>
+
+  </div>
+</body>
+</html>

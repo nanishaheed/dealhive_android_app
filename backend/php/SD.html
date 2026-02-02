@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Add Category</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color: #0f0f10;
+    color: #ffffff;
+  }
+
+  .container {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .back {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* Labels */
+  .label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #cfcfcf;
+  }
+
+  /* Image Upload */
+  .image-upload {
+    width: 100%;
+    height: 160px;
+    background-color: #2a2a2e;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .image-upload .plus {
+    font-size: 32px;
+    color: #3b82f6;
+    margin-bottom: 8px;
+  }
+
+  .image-upload span {
+    font-size: 14px;
+    color: #b5b5b5;
+  }
+
+  /* Inputs */
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #0f0f10;
+    border: 1px solid #3a3a3d;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .input::placeholder {
+    color: #8a8a8a;
+  }
+
+  .helper {
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-top: 6px;
+  }
+
+  /* Button */
+  .btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #1e4f91;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="back">←</div>
+      <div class="title">Add Category</div>
+    </div>
+
+    <div class="label">Category Image</div>
+    <div class="image-upload">
+      <div class="plus">+</div>
+      <span>Tap to upload image</span>
+    </div>
+
+    <div class="input-group">
+      <div class="label">Category Name *</div>
+      <input class="input" type="text" placeholder="e.g., Smartphones">
+    </div>
+
+    <div class="input-group">
+      <div class="label">URL Slug *</div>
+      <input class="input" type="text" placeholder="e.g., smartphones">
+      <div class="helper">Auto-generated from name. Used in URLs.</div>
+    </div>
+
+    <button class="btn">Add Category</button>
+
+  </div>
+</body>
+</html>

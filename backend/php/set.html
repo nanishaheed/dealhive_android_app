@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  .screen {
+    max-width: 420px;
+    margin: auto;
+    padding: 16px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .back {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  /* Section label */
+  .section {
+    font-size: 14px;
+    opacity: 0.6;
+    margin: 18px 0 10px;
+  }
+
+  /* Row */
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #141414;
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .text strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  .text span {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  .arrow {
+    opacity: 0.5;
+  }
+
+  /* Toggle (visual only) */
+  .toggle {
+    width: 44px;
+    height: 26px;
+    background: #1e90ff;
+    border-radius: 13px;
+    position: relative;
+  }
+
+  .toggle::after {
+    content: "";
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+  /* Logout */
+  .logout {
+    background: #2a0f12;
+    color: #ff4d4d;
+    margin-top: 20px;
+  }
+
+  .logout .icon {
+    background: #3b1518;
+  }
+</style>
+</head>
+
+<body>
+<div class="screen">
+
+  <div class="header">
+    <div class="back">←</div>
+    <div class="title">Settings</div>
+  </div>
+
+  <div class="section">Preferences</div>
+
+  <div class="row">
+    <div class="icon">🌙</div>
+    <div class="text">
+      <strong>Dark Mode</strong>
+      <span>Using dark theme</span>
+    </div>
+    <div class="toggle"></div>
+  </div>
+
+  <div class="section">Legal</div>
+
+  <div class="row">
+    <div class="icon">🛡️</div>
+    <div class="text">
+      <strong>Terms of Service</strong>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="row">
+    <div class="icon">🔒</div>
+    <div class="text">
+      <strong>Privacy Policy</strong>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="section">About</div>
+
+  <div class="row">
+    <div class="icon">ℹ️</div>
+    <div class="text">
+      <strong>App Version</strong>
+      <span>1.0.0</span>
+    </div>
+  </div>
+
+  <div class="row logout">
+    <div class="icon">⎋</div>
+    <div class="text">
+      <strong>Logout</strong>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

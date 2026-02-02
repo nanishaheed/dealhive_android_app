@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Compare Products</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  .screen {
+    max-width: 420px;
+    margin: auto;
+    padding: 16px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .back {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  /* Compare slots */
+  .compare-box {
+    background: #141414;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .slot {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+  }
+
+  .swap {
+    font-size: 22px;
+    color: #1e90ff;
+  }
+
+  /* Hint text */
+  .hint {
+    opacity: 0.7;
+    margin-bottom: 12px;
+  }
+
+  /* Product list */
+  .card {
+    background: #141414;
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .thumb {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 12px;
+  }
+
+  .info {
+    flex: 1;
+  }
+
+  .name {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .price {
+    color: #3aa0ff;
+    font-weight: 600;
+  }
+
+  .source {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 2px;
+  }
+</style>
+</head>
+
+<body>
+<div class="screen">
+
+  <div class="header">
+    <div class="back">←</div>
+    <div class="title">Compare Products</div>
+  </div>
+
+  <div class="compare-box">
+    <div class="slot">Product 1</div>
+    <div class="swap">⇄</div>
+    <div class="slot">Product 2</div>
+  </div>
+
+  <div class="hint">Select two products to compare</div>
+
+  <!-- Product 1 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Pebble Royale Legend | 1.43" AMOLED Display | Ultra-Slim Premium Build
+      </div>
+      <div class="price">₹3,299</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Noise Pro 6R 1.46" AMOLED Smart Watch, 1000 NITS, Built-in GPS
+      </div>
+      <div class="price">₹6,999</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Pebble Royale Legend | 1.43" AMOLED Display | Always-On Display
+      </div>
+      <div class="price">₹3,299</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Noise Pro 6R 1.46" AMOLED Smart Watch, AI Pro, Strava Support
+      </div>
+      <div class="price">₹6,999</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Boat Rockerz 650 Pro, Touch/Swipe Controls, 80Hrs Battery
+      </div>
+      <div class="price">₹2,838</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Noise Airwave Max 5 Wireless Over-Ear Headphones with ANC
+      </div>
+      <div class="price">₹4,999</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

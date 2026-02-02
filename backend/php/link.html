@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Compare Products</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  .screen {
+    max-width: 420px;
+    margin: auto;
+    padding: 16px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .back {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  /* Compare slots */
+  .compare-box {
+    background: #141414;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .slot {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+  }
+
+  .swap {
+    font-size: 22px;
+    color: #1e90ff;
+  }
+
+  /* Hint text */
+  .hint {
+    opacity: 0.7;
+    margin-bottom: 12px;
+  }
+
+  /* Product list */
+  .card {
+    background: #141414;
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .thumb {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 12px;
+  }
+
+  .info {
+    flex: 1;
+  }
+
+  .name {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  .price {
+    color: #3aa0ff;
+    font-weight: 600;
+  }
+
+  .source {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 2px;
+  }
+</style>
+</head>
+
+<body>
+<div class="screen">
+
+  <div class="header">
+    <div class="back">←</div>
+    <div class="title">Compare Products</div>
+  </div>
+
+  <div class="compare-box">
+    <div class="slot">Product 1</div>
+    <div class="swap">⇄</div>
+    <div class="slot">Product 2</div>
+  </div>
+
+  <div class="hint">Select two products to compare</div>
+
+  <!-- Product 1 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Pebble Royale Legend | 1.43" AMOLED Display | Ultra-Slim Premium Build
+      </div>
+      <div class="price">₹3,299</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Noise Pro 6R 1.46" AMOLED Smart Watch, 1000 NITS, Built-in GPS
+      </div>
+      <div class="price">₹6,999</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Pebble Royale Legend | 1.43" AMOLED Display | Always-On Display
+      </div>
+      <div class="price">₹3,299</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Noise Pro 6R 1.46" AMOLED Smart Watch, AI Pro, Strava Support
+      </div>
+      <div class="price">₹6,999</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Boat Rockerz 650 Pro, Touch/Swipe Controls, 80Hrs Battery
+      </div>
+      <div class="price">₹2,838</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="card">
+    <div class="thumb">IMG</div>
+    <div class="info">
+      <div class="name">
+        Noise Airwave Max 5 Wireless Over-Ear Headphones with ANC
+      </div>
+      <div class="price">₹4,999</div>
+      <div class="source">Amazon</div>
+    </div>
+  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Available Offers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  .screen {
+    max-width: 420px;
+    margin: auto;
+    padding: 16px;
+    padding-bottom: 110px;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 14px;
+    opacity: 0.7;
+    margin: 16px 0 12px;
+    letter-spacing: 1px;
+  }
+
+  /* Offer cards */
+  .offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .offer-card {
+    background: #141414;
+    border-radius: 18px;
+    padding: 14px;
+  }
+
+  .store {
+    color: #3aa0ff;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .offer {
+    margin-bottom: 10px;
+  }
+
+  .offer strong {
+    display: block;
+    font-size: 14px;
+  }
+
+  .offer span {
+    font-size: 13px;
+    opacity: 0.75;
+  }
+
+  .partner {
+    color: #2ecc71;
+    font-weight: 600;
+  }
+
+  /* Comparison cards */
+  .compare-card {
+    background: #141414;
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+
+  .compare-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .good {
+    color: #2ecc71;
+    font-size: 14px;
+  }
+
+  .bad {
+    color: #ff4d4d;
+    font-size: 14px;
+  }
+
+  /* Bottom buy bar */
+  .buy-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #141414;
+    padding: 14px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .buy-option {
+    flex: 1;
+    text-align: center;
+  }
+
+  .price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .btn {
+    padding: 12px;
+    border-radius: 14px;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+  }
+
+  .btn-dark {
+    background: #1f1f1f;
+    color: #ffffff;
+  }
+
+  .btn-primary {
+    background: #1486ff;
+    color: #ffffff;
+  }
+</style>
+</head>
+
+<body>
+<div class="screen">
+
+  <div class="section-title">AVAILABLE OFFERS</div>
+
+  <div class="offers">
+    <div class="offer-card">
+      <div class="store">Amazon</div>
+
+      <div class="offer">
+        <strong>Price Drop</strong>
+        <span>60% off – Save ₹150000</span>
+      </div>
+
+      <div class="offer">
+        <strong>Bank Offer</strong>
+        <span>Upto ₹4,000 discount on SBI Credit Cards</span>
+      </div>
+
+      <div class="offer">
+        <strong>No Cost EMI</strong>
+        <span>Upto ₹10,040 EMI interest savings</span>
+      </div>
+
+      <div class="offer">
+        <strong>Cashback</strong>
+        <span>Upto ₹2,999 cashback as Amazon Pay Balance</span>
+      </div>
+
+      <div class="offer partner">
+        Partner Offers
+      </div>
+      <span>Get GST invoice and save up to 18%</span>
+    </div>
+
+    <div class="offer-card">
+      <div class="store">Amazon</div>
+
+      <div class="offer">
+        <strong>Price Drop</strong>
+        <span>63% off – Save ₹125000</span>
+      </div>
+
+      <div class="offer">
+        <strong>Bank Offer</strong>
+        <span>Upto ₹3,000 discount on SBI Credit Cards</span>
+      </div>
+
+      <div class="offer">
+        <strong>No Cost EMI</strong>
+        <span>Upto ₹7,530 EMI interest savings</span>
+      </div>
+
+      <div class="offer">
+        <strong>Cashback</strong>
+        <span>Upto ₹2,249 cashback as Amazon Pay Balance</span>
+      </div>
+
+      <div class="offer partner">
+        Partner Offers
+      </div>
+      <span>Get GST invoice and save up to 18%</span>
+    </div>
+  </div>
+
+  <div class="compare-card">
+    <div class="compare-title">Hisense 189 cm</div>
+    <div class="points">
+      <div class="good">✔ Better Performance</div>
+      <div class="bad">✖ Basic Camera</div>
+      <div class="good">✔ Better Display</div>
+      <div class="bad">✖ Smaller Battery</div>
+    </div>
+  </div>
+
+  <div class="compare-card">
+    <div class="compare-title">TOSHIBA 189 cm</div>
+    <div class="points">
+      <div class="good">✔ Superior Camera</div>
+      <div class="bad">✖ Slower Processor</div>
+      <div class="good">✔ Longer Battery</div>
+      <div class="bad">✖ Basic Display</div>
+      <div class="good">✔ Better Updates</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="buy-bar">
+  <div class="buy-option">
+    <div class="price">₹99,999</div>
+    <button class="btn btn-dark">Buy</button>
+  </div>
+
+  <div class="buy-option">
+    <div class="price">₹74,999</div>
+    <button class="btn btn-primary">Buy</button>
+  </div>
+</div>
+
+</body>
+</html>
+</div>
+</body>
+</html>

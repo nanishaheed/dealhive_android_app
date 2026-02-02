@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: Inter, system-ui, sans-serif;
+  }
+
+  .screen {
+    max-width: 420px;
+    margin: auto;
+    padding: 16px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .back {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  /* Profile info */
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background: #0e2a47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .email {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  .edit {
+    margin-left: auto;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Section label */
+  .section {
+    font-size: 14px;
+    opacity: 0.6;
+    margin: 16px 0 10px;
+  }
+
+  /* List items */
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #141414;
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .text strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  .text span {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  .arrow {
+    opacity: 0.5;
+  }
+
+  /* Logout */
+  .logout {
+    background: #2a0f12;
+    color: #ff4d4d;
+  }
+
+  .logout .icon {
+    background: #3b1518;
+  }
+</style>
+</head>
+
+<body>
+<div class="screen">
+
+  <div class="header">
+    <div class="back">←</div>
+    <div class="title">Profile</div>
+  </div>
+
+  <div class="profile">
+    <div class="avatar">👤</div>
+    <div>
+      <div class="name">shaheed</div>
+      <div class="email">abdulshaheed0304@gmail.com</div>
+    </div>
+    <div class="edit">✎</div>
+  </div>
+
+  <div class="section">Account</div>
+
+  <div class="item">
+    <div class="icon">⟳</div>
+    <div class="text">
+      <strong>Comparison History</strong>
+      <span>View your past comparisons</span>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="item">
+    <div class="icon">🔖</div>
+    <div class="text">
+      <strong>Saved Items</strong>
+      <span>Products you've bookmarked</span>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="item">
+    <div class="icon">⚙</div>
+    <div class="text">
+      <strong>Settings</strong>
+      <span>App preferences and account</span>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+  <div class="section">Session</div>
+
+  <div class="item logout">
+    <div class="icon">⎋</div>
+    <div class="text">
+      <strong>Logout</strong>
+      <span>Sign out of your account</span>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+
+</div>
+</body>
+</html>
